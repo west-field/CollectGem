@@ -202,9 +202,9 @@ public class SelectPlayerMove : MonoBehaviour
         }
         if(name == "stage2")
         {
-            //_manager.ChangeScene("PlayingScene2");
+            _manager.ChangeScene("Stage2Scene");
         }
-        if(name == "stage3")
+        if (name == "stage3")
         {
             //_manager.ChangeScene("PlayingScene");
         }

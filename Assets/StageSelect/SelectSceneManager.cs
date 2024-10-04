@@ -229,7 +229,7 @@ public class SelectSceneManager : MonoBehaviour
 
         _name = name;
 
-        if(name == "PlayingScene")
+        if(name == "Stage1Scene")
         {
             _stageName.text ="ステージ1へ\n移動しますか";
         }

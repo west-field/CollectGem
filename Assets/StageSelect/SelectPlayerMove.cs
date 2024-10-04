@@ -198,7 +198,7 @@ public class SelectPlayerMove : MonoBehaviour
         //ステージボックスの名前から、変更するシーンを選ぶ
         if (name == "stage1")
         {
-            _manager.ChangeScene("PlayingScene");
+            _manager.ChangeScene("Stage1Scene");
         }
         if(name == "stage2")
         {

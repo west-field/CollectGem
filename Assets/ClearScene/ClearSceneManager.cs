@@ -26,6 +26,8 @@ public class ClearSceneManager : MonoBehaviour
     public TextMeshProUGUI _gameclear;//クリア文字
     float  _fontSizeChangeSpeed;//クリア文字のフォントサイズを変更するための変数
 
+    public Animator _gameObjectAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,8 @@ public class ClearSceneManager : MonoBehaviour
         }
         
         _fontSizeChangeSpeed = 0.1f;
+
+        _gameObjectAnimator.SetBool("clear", true);
     }
 
     // Update is called once per frame

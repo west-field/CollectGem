@@ -26,6 +26,8 @@ public class GameoverSceneManager : MonoBehaviour
     public TextMeshProUGUI _gameover;//ゲームオーバー文字
     float  _fontSizeChangeSpeed;//フォントサイズを変更するための変数
 
+    public Animator _gameObjectAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,8 @@ public class GameoverSceneManager : MonoBehaviour
         }
 
         _fontSizeChangeSpeed = 0.1f;
+
+        _gameObjectAnimator.SetBool("gameover", true);
     }
 
     // Update is called once per frame

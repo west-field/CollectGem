@@ -136,7 +136,7 @@ public class Normal : MonoBehaviour
             Debug.Log("bullet"); // ログを表示する
             //アニメーション
             _animator.SetBool("walkFlag", false);
-            _animator.SetBool("deathTrigger", true);
+            _animator.SetBool("deleteTrigger", true);
             //弾と当たった
             _isHitBullet = true;
             //音を鳴らす
